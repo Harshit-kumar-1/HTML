@@ -1,0 +1,41 @@
+body{
+        background-color: gainsboro;
+        font-size: larger;
+    }
+a{
+    color: black;
+    text-decoration: none;
+    }
+
+.a1{
+    color: blue;
+    text-decoration: dimgray;
+    }
+
+    h1{
+    color: blue;
+    }
+
+button{
+    padding: 10px 10px;
+    margin: 0px 0px 0px 10px;
+    background-color: teal;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+video,img{
+    border-radius: 15px;
+    background-color: transparent;
+    align-items: center;
+    margin:5px 0px 5px 170px
+    }
+
+table{
+    margin: 10px 10px;
+    padding: 50px 10px 10px 10px;
+    }
+
+hr{
+    color: blue;
+    }
