@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table border</title>
+    <style>
+        header{
+            font-size: 30px;
+            border-bottom: 2px solid black;
+            margin-bottom: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table{
+            /* border: 5px solid red; */
+            border: 10px solid red;
+            border-collapse: collapse;
+        }
+        table td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Table</div>
+    </header>
+    <div class="body">
+        <table width="100%" ><!--  cellpadding="5" cellspacing="5" border="1" -->
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
