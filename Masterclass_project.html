@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterClass Project</title>
+
+    <style>
+        html{
+            font-size: 92.5%;
+        }
+        body{
+            background-color: whitesmoke;
+            width: 50%;
+            margin: auto auto;
+            border: 2px solid whitesmoke;
+            box-shadow: 3px 6px 10px;
+        }
+        a{
+            text-decoration: none;
+            color: olive;
+        }
+        nav>a[href^='/']{
+            color: blue;
+            display: block;
+            background-color: darkgray;
+            padding: 0.3rem;
+            font-size: 1.3rem;
+            position: fixed;
+            width: 49.4%;
+            top: 0;
+            border-bottom: 2px solid black;
+            box-shadow: 1px 1px 6px;
+        }
+        @media screen and (max-width:772px){
+        nav>a[href^='/']{
+            width:48.62%;
+        }
+        }
+        .nav-container{
+            background-color: pink;
+            padding: 0.6rem;
+            font-size: 1.3rem;
+            margin-top: 0rem;
+            width: 25%;
+            float: left;
+            margin-right: 10px;
+        }
+        .nav-title{
+            display: block;
+            background-color: aliceblue;
+        }
+        .nav{
+            list-style: none;
+            display: inline-block;
+            padding: 0px 12px;
+        }
+        li{
+            display: block;
+            /* margin: 0rem 0.6rem; */
+            /* background-color: aqua; */
+        }
+        .body{
+            font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS';
+            margin: 3.6rem 0px;
+            
+        }
+        blockquote{
+            border: 2px solid red;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        blockquote::before{
+            content: '"';
+        }
+        blockquote::after{
+            content: '"';
+            text-transform: inherit;
+            transition: 0.4s ease-in;
+            text-align: center;
+            font-size: 20px;
+        }
+        blockquote:hover{
+            border: 2px solid green;
+            transition: 0.9s ease-in-out;
+            box-shadow: 5px 5px 10px;
+            text-shadow: 5px 4px 4px;
+        }
+        footer{
+            color: white;
+            background-color: black;
+            padding: 0.6rem;
+        }
+        .col1,.col2,.col3{
+            display: inline-block;
+            margin:0px 1.2em;
+            width: 27%;
+            text-align: center;
+            word-spacing: 2px;
+            /* border: 1px solid red; */
+        }
+        .full-col{
+            width: 92%;
+            padding: 10px;
+            margin: 2px 1.2em;
+            /* border: 1px solid red; */
+            overflow: hidden;
+            text-align: center;
+            word-spacing: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="/" id="brand">MyProject</a>
+    </nav>
+
+    <div class="nav-container">
+        <div class="nav-title">Navigation</div>
+        <ul class="nav">
+            <li>
+                <a href="#">Link #1</a>
+            </li>
+            <li>
+                <a href="#">Link #2</a>
+            </li>
+            <li>
+                <a href="#">Link #3</a>
+            </li>
+            <li>
+                <a href="#">Link #4</a>
+            </li>
+            <li>
+                <a href="#">Link #5</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <p>
+            Welcome to your first major project.
+            This is designed to be difficult <em>and</em>
+            to give you hands on experience with a real world project.
+        </p>
+        <p>
+            There will be many time in your life as a devloper that you 
+            will get stuck. you don't know where to start and you never start becouse it's hard to find the right place to start.
+        </p>
+        <p> 
+            But lot me teell you this:
+            <blockquote>
+                The <em>Best</em> time to start is now.
+                The <em>Best</em> place to start is here.
+                just get started!
+            </blockquote>
+        </p>
+    </div>
+    
+    <p style="overflow: hidden; text-align: justify; padding: 0.2rem;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Voluptates beatae obcaecati ex adipisci suscipit tempora 
+        cumque architecto consequuntur, odio at molestiae, ducimus corporis! Beatae quidem quas ullam, illo magni esse consectetur facilis
+         sed, corporis minus sunt aliquam accusamus adipisci! Temporibus neque alias aut impedit, 
+        earum quam quaerat perspiciatis veniam! Ea ullam similique
+         beatae esse ab ratione in aut a quo eligendi qui vitae earum at 
+        necessitatibus, architecto ipsum porro, excepturi veniam harum impedit molestiae! Laborum voluptatum animi,
+         iste reiciendis tempora illo incidunt facere, at debitis, quis sequi. Ipsum 
+        nulla veritatis voluptatibus reiciendis. Dolorum aliquam reiciendis maxime maiores. Sunt assumenda laboriosam obcaecati
+         commodi exercitationem doloremque, fugit laborum aliquam 
+        soluta voluptatum impedit odit ad saepe vitae libero repellat dolore recusandae? Numquam odit dolores mollitia repellat, 
+        recusandae voluptatibus autem deserunt qui, ipsa dolore nisi 
+        rerum earum tempora soluta facilis nobis est neque laborum. Odit culpa, nesciunt doloribus ducimus cupiditate qui ullam saepe facilis voluptatem quod nihil quae ut exercitationem 
+        itaque corrupti ab eligendi dolor? Animi delectus numquam 
+        pariatur sunt sed illum repellat, nisi impedit dicta quidem harum excepturi totam. Maxime aperiam obcaecati sint ab ill
+        o
+         repudiandae? Perspiciatis non similique soluta distinctio     
+    </p>
+
+    <footer class="row">
+        <div class="col1">
+            Left Column
+        </div>
+        <div class="col2">
+            middle Column
+        </div>
+        <div class="col3">
+            right column
+        </div>
+        <div class="full-col">
+            This should take up the width of 3 columns
+        </div>
+    </footer>
+    
+</body>
+</html>
