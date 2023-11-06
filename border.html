@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Demonstration</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            /* this is not work becouse another code is running. */
+            border: 1px solid green;
+            /* this css is work becouse html run top to bottom.*/
+            border-width: 2px;
+            border-style: dotted;
+            border-color: teal;
+        }
+        span{
+            border-width: 2px;
+            border-style: dotted;
+            border-color: teal;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        Hello this is page for demonstrate border properties;
+    </div><br><br>
+    <span>
+        This is not  a block tag
+    </span>
+
+</body>
+</html>
