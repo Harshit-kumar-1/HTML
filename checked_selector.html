@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/css_folder/css/fontawesome.min.css"> -->
+    <title>Advance selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: lightcoral;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.75;
+            width: 100%;
+        }
+
+        nav>span {
+            color: red;
+        }
+        article,nav{
+            text-align: center;
+        }
+
+        header>article {
+            position: relative;
+            font-size: 25px;
+            background-color: lightskyblue;
+            margin: auto;
+            margin-top: 70px;
+            padding: 20px;
+            /* border-top: 2px solid black;
+            border-bottom: 2px solid black; */
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            margin-top: 15px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 1px solid rgb(108, 233, 97);
+            /* font-size: 30px; */
+        }
+
+        @media screen and (max-width:665px) {
+            header>article {
+                margin-top: 105px;
+                text-align: left;
+            }
+            form {
+            width: 100%;
+        }
+
+        }
+
+        
+        
+        div{
+            margin-top: 20px;
+        }
+        span#cbox{
+            margin: 20px;
+            border: 1px solid #999;
+            background-color: lightblue;
+            padding: 0.3rem;
+        }
+
+        input[type='checkbox']:checked + span.sp1{
+            background-color: rgb(94, 0, 156);
+            color: #fff;
+            font-size: 25px;
+            padding: 10px;
+        }
+        input[type='checkbox']:checked + span.sp2{
+            background-color: rgb(99, 226, 82);
+            color: #fff;
+            font-size: 25px;
+            padding: 10px;
+        }
+        input[type='checkbox']:checked + span.sp3{
+            background-color: rgb(99, 226, 82);
+            color: #fff;
+            font-size: 25px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            CSS pseudo Selector by Harshit kumar <span>❤</span>;
+        </nav>
+        <article>
+            input[type="checkbox"]:checked + span.demo{ }
+        </article>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <input type="checkbox" name="cbox" id="cbox1">
+            <span class="sp1" id="sp1">Hello Man ! what are you doing ?</span>
+            <br>
+            <div>
+                <label for="cbox1">
+                    <span id="cbox" onclick="change1()"> click1 </span>
+                </label>
+            </div>
+            <br>
+            <input type="checkbox" name="cbox2" id="cbox2">
+            <span class="sp2" id="sp2">Hello Man ! why are you here ? </span>
+            <div>
+                <label for="cbox2">
+                    <span id="cbox" onclick="change2()"> click2 </span>
+                </label>
+            </div>
+            <br>
+            <input type="checkbox" name="cbox3" id="cbox3">
+            <span class="sp3" id="sp3">Wait a minute ? who are you ? </span>
+            <!-- <br> -->
+            
+            <div>  
+                <label for="cbox3">
+                    <span id="cbox" onclick="change3()"> click3 </span>
+                </label>
+            </div>
+        </form>
+    </main>
+    <script>
+        function change1(){
+            document.getElementById('sp1').innerHTML="Kai ni betha han";
+        }
+        function change2(){
+            document.getElementById('sp2').innerHTML="padai ke liye naa ! To pad na bhos$ike";
+        }
+        function change3(){
+            document.getElementById('sp3').innerHTML="You are a hope of your parents, Don't forget why you are here ";
+        }
+    </script>
+</body>
+
+</html>

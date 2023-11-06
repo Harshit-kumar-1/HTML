@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/css_folder/css/fontawesome.min.css"> -->
+    <title>Pseudo selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: lightcoral;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.75;
+            width: 100%;
+        }
+
+        nav>span {
+            color: red;
+        }
+        article,nav{
+            text-align: center;
+        }
+
+        header>article {
+            position: relative;
+            font-size: 25px;
+            background-color: lightskyblue;
+            margin: auto;
+            margin-top: 70px;
+            padding: 20px;
+            /* border-top: 2px solid black;
+            border-bottom: 2px solid black; */
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            margin-top: 15px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 1px solid rgb(108, 233, 97);
+            /* font-size: 30px; */
+        }
+
+        @media screen and (max-width:665px) {
+            header>article {
+                margin-top: 105px;
+                text-align: left;
+            }
+            form {
+            width: 100%;
+        }
+
+        }
+
+        .color{
+            color:palevioletred;
+        }
+
+        .blue{ color: blue;}
+        .red{ color: red;}
+        .green{ color: green;}
+        
+        .color:not(.red):not(.green):not(.blue){
+            font-size: 2rem;
+            background-color: black;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            CSS pseudo Selector by Harshit kumar <span>❤</span>;
+        </nav>
+        <article>
+            input:disabled
+        </article>
+    </header>
+
+    <main>
+        <form action="" method="get">   
+            <p>Lorem ipsum dolor sit <span class="color"> amet consectetur adipisicing</span> elit. Eligendi soluta vel omnis, assumenda animi, <span class="color blue"> rerum numquam quidem </span>repudiandae voluptatum qui obcaecati labore <span class="color blue"> rem laudantium, cum </span>quos cumque asperiore <span class="color red"> Quibusdam blanditiis dicta </span>iusto ad qui quam doloremque adipisci eligendi <span class="color red">officia. Iste odio necessitatibus sunt? </span> Ex ratione ullam culpa, repudiandae labore corrupti minus repellat expedita magnam <span class="color green"> unde quis minima beatae. Mollitia exercitationem </span>architecto officiis assumenda ipsam reiciendis animi iste eligendi <span class="color green"> consequuntur sequi. Fugit iure a suscipit distinctio </span>alias error consequuntur, inventore officia voluptatum est.</p>
+        </form>
+    </main>
+    
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/css_folder/css/fontawesome.min.css"> -->
+    <title>Pseudo selector</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: lightcoral;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        nav>span {
+            color: red;
+        }
+
+        header>article {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightskyblue;
+            margin-top: 70px;
+            padding: 15px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        @media screen and (max-width:682px) {
+            header>article {
+                margin-top: 105px;
+            }
+        }
+
+        #parent {
+            width: 100%;
+            /* margin: auto; */
+            /* text-align: center; */
+            /* background-color: lightseagreen; */
+            padding: 10px;
+        }
+
+        section.one,section.two{
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+        p:first-child {
+            background-color: rgb(120, 8, 8);
+            color: rgb(253, 164, 55);
+            font-size: 20px;
+            padding: 5px;
+        }
+        div.chhild:first-child{
+            
+            background-color: lightcoral;
+            color: darkred;
+            font-size: 25px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            CSS pseudo Selector by Harshit kumar <span>❤</span>;
+        </nav>
+        <article>
+            :first-child{ };
+        </article>
+    </header>
+
+    <main>
+        <section class="one">
+            <h1>This is first section</h1>
+            <p class="child">Outside #1 CHILD</p>
+            <div id="parent1">
+                <p class="child">FIRST CHILD</p>
+                <p class="child">SECOND CHILD</p>
+                <p class="child">THIRD CHILD</p>
+            </div>
+            <p class="child">Outside #2 CHILD</p>
+        </section>
+        <section class="two">
+            <h2>This is second section</h2>
+            <div id="parent2">
+                <div class="chhild">first child div</div>
+                <div class="chhild">second child div</div>
+                <div class="chhild">third child div</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

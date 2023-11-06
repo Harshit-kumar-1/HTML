@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/css_folder/css/fontawesome.min.css"> -->
+    <title>Pseudo selector</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: lightcoral;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.75;
+            width: 100%;
+        }
+
+        nav>span {
+            color: red;
+        }
+        article,nav{
+            text-align: center;
+        }
+
+        header>article {
+            position: relative;
+            font-size: 25px;
+            background-color: lightskyblue;
+            margin: auto;
+            margin-top: 70px;
+            padding: 20px;
+            /* border-top: 2px solid black;
+            border-bottom: 2px solid black; */
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            margin-top: 15px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 1px solid rgb(108, 233, 97);
+            /* font-size: 30px; */
+        }
+
+        @media screen and (max-width:665px) {
+            header>article {
+                margin-top: 105px;
+                text-align: left;
+            }
+            form {
+            width: 100%;
+        }
+
+        }
+
+        input:disabled{
+            width: 60%;
+            margin: 10px 5px;
+            border: 1px solid red;
+            outline: 2px dotted blue;
+            height: 2em;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            CSS pseudo Selector by Harshit kumar <span>❤</span>;
+        </nav>
+        <article>
+            input:disabled
+        </article>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="">Disabled Input</label>
+            <input type="text" disabled>
+            Enabled Input
+            <input type="text">
+        </form>
+    </main>
+    
+</body>
+
+</html>
