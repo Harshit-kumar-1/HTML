@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-none</title>
+    <style>
+        header{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            border-bottom: 2px solid black;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .div{
+            display: inline-block;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* border: 2px solid black; */
+            padding: 5px;
+        }
+        #name{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Display: none</div>
+    </header>
+    <div class="div">
+        Hello My Name is
+        <span id="name">
+            Harshit.
+            <span>
+                What is your name ?
+            </span>
+        </span>
+    </div><br><br>
+    <button onclick="show()">click to show</button>
+    <button onclick="hide()">click to hide</button>
+    <script>
+        function show(){
+            document.getElementById("name").style.display='inline';
+            document.getElementById("name").style.border='1px solid blue';
+        }
+        function hide(){
+            document.getElementById("name").style.display='none';
+        }
+    </script>
+</body>
+</html>

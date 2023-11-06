@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display inline block</title>
+    <style>
+        header > div{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+            background-color: #5f56;
+        }
+        .inline{
+            font-size: 25px;
+            background-color: aqua;
+            display: inline;
+            border: 5px solid red;
+            margin-bottom: 10px;
+            /* width: 500px; we can't use height or width in inline type 
+            height: 500px; */
+        }
+
+        .already-inline{
+            border:1px solid blue;
+            margin: 15px 15px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>This is a Block demonstration.</div>
+    </header>
+    <!-- div is already have inline-block -->
+    <div class="inline">This is inline demonstration</div>
+    <div class="already-inline">
+        <span>span 1 </span>
+        <span>span 2 </span>
+        <span>span 3 </span>
+        <span>span 4 </span>
+        <span>span 5 </span>
+    </div>
+</body>
+</html>
