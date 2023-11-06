@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear:both</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            background-color: lightcoral;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        nav>span {
+            color: red;
+        }
+
+        header>article {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightskyblue;
+            margin-top: 70px;
+            padding: 15px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        img {
+            float: left;
+            width: auto;
+            height: 400px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .img1 {
+            float: left;
+        }
+
+        .img2 {
+            float: right;
+        }
+        .demo{
+            clear:right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            CSS float by Harshit kumar <span>❤</span>;
+        </nav>
+        <article>
+            clear:both / left/ right;
+        </article>
+    </header>
+
+    <div>
+        <img src="/images/harshit.jpg" alt="harshit" class="img1">
+        <div class="demo"> lorem hello </div>
+        <img src="/images/harshit.jpg" alt="harshit" class="img2">
+    </div>
+</body>
+
+</html>
