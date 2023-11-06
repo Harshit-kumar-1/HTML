@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list style position</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .contener{
+            width: 50%;
+            margin: auto;
+            background-color: thistle;
+        }
+        header{
+            border-bottom:1px solid black ;
+            margin-bottom: 5px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ol.inside{
+            list-style-position: inside;
+            border: 1px solid red;
+            width: 500px;
+        }
+        ol.outside{
+            list-style-position: outside;
+            border: 1px solid red;
+            width: 500px;
+        }
+        .contener2{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contener">
+        <header>
+            This article for list style position
+        </header>
+        <div>
+            <div class="contener2">Inside</div>
+                <ol class="inside">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ol>
+            <div class="contener2">Outside</div>
+                <ol class="outside">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ol>
+        </div>
+    </div>
+</body>
+</html>

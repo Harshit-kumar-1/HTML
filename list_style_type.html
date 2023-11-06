@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style Type</title>
+    <style>
+        header{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: brown;
+            border-bottom: 1px solid black;
+            margin-bottom:5px ;
+        }
+        ol li {
+            list-style: none;/* cercle|dotted|disk |upper-roman | lower-roman | upper-alpha |  lower-alpha | georgian |*/
+            margin: 0;
+            padding-left: 0;
+        }
+        ol > li{
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        This is demonstration list style type
+    </header>
+
+    <div class="container">
+        <ol>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ol>
+    </div>
+</body>
+
+</html>
