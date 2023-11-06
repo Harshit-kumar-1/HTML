@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms form field</title>
+    <style>
+        form {
+            padding: 0px 0px;
+            background-color: turquoise;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        label {
+            margin: 10px 0px 10px 10px;
+        }
+
+        input {
+            margin: 10px 0px 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="div.html" method="post">
+        <div>
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname" required><br>
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" required><br>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" required><br>
+        </div>
+        <div>
+            <label for="number">number</label>
+            <input type="number" required name="number" id="number" step="2" min="1" max="9999999999"><br>
+            <label for="hobby">Book</label>
+            <input type="checkbox" name="hobby" id="Book">
+            <label for="hobby">sweeming</label>
+            <input type="checkbox" name="hobby" id="sweeming">
+            <label for="hobby">exercise</label>
+            <input type="checkbox" name="hobby" id="exercise">
+        </div>
+        <div>
+            <label for="Date">Date</label>
+            <input type="date" name="date" id="date" required><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="hidden">hidden</label>
+            <input type="hidden" name="it_is_hidden" id="hidden" required><br>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url" required><br>
+            <label for="file">File Uploade</label>
+            <input type="file" name="file">
+        </div>
+        <input type="submit" name="submit" value="submit">
+
+    </form>
+
+</body>
+
+</html>
