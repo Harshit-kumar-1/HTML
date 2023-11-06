@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Box Shadow</title>
+    <style>
+      /* Here you can change */
+
+      body {
+        background: green;
+      }
+      .learning {
+        padding: 10px;
+        /* margin-top: 29px; */
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .learning .card {
+        display: inline-block;
+        width: 260px;
+        height: 360px;
+        background-color: white;
+        border: 1px solid red;
+        padding: 5px;
+      }
+
+      .card:hover {
+        box-shadow: 0px 5px 10px black;
+        transition: 0.3s ease-in-out;
+      }
+
+      .card:hover .card-header {
+        text-decoration: underline;
+      }
+      .card-header {
+        margin: 10px 0 15px;
+        font-weight: 700;
+        font-size: 15px;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        padding: 10px;
+        color: black;
+      }
+      .card-content {
+        font-size: 13px;
+        text-align: center;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">Mini Project : Card</div>
+    </section>
+    <section class="learning">
+      <a href="#">
+        <div class="card">
+          <img src="https://placehold.co/250x200" alt="img" />
+          <div class="card-text">
+            <div class="card-header">I am a Card Header.</div>
+            <div class="card-content">
+              Something Something Something... Something Something Something...
+              Something Something Something... Something Something Something...
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

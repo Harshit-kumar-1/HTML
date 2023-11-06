@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Box Shadow</title>
+    <style>
+      /* Here you can change */
+
+      body {
+        background: green;
+      }
+      .learning {
+        padding: 10px;
+        margin-top: 29px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .learning #sun {
+        padding: 50px;
+        margin: 50px 100px;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(240, 178, 19);
+        color: white;
+        border-radius: 50%;
+        position: absolute;
+        /* box-shadow: 10px 10px 30px black; */
+        box-shadow: inset 60px 0px 30px red;
+      }
+
+      .learning #moon {
+        display: inline-block;
+        padding: 50px;
+        margin: 50px 550px;
+        height: 300px;
+        position: absolute;
+        width: 300px;
+        background-color: rgb(10, 2, 37);
+        color: black;
+        border-radius: 50%;
+        /* box-shadow: 10px 10px 30px black; */
+        box-shadow: inset 120px 0px 0px white;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">box-shadow: 5px 5px 5px black;</div>
+    </section>
+    <section class="learning">
+      <div id="sun">
+        <h1>The Shadow Text Example</h1>
+      </div>
+      <div id="moon">
+        <h1>The Shadow Text Example</h1>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Flex properties</title>
+    <style>
+      .learning {
+        margin: 0px auto;
+      }
+
+      /* Here you can change */
+      .row {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+      }
+
+      .col {
+        border: 1px solid green;
+        flex-basis: 100%;
+      }
+      .col1 {
+        flex-basis: 50%;
+      }
+      .col2 {
+        flex-basis: 25%;
+        flex-grow: 1; /*it allow to take all the extra space of a div or child element*/
+      }
+      .col3 {
+        flex-basis: 75%;
+        flex-grow: 0; /*it allow another div to borrow some space in this div*/
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">flex-basis : 1|2|3|-1;</div>
+    </section>
+    <section class="learning">
+      <div class="row">
+        <div class="col col1">New Columns</div>
+      </div>
+      <div class="row">
+        <div class="col col2">New Columns</div>
+        <div class="col col3">New Columns</div>
+      </div>
+      <div class="row">
+        <div class="col col3">New Columns</div>
+        <div class="col col2">New Columns</div>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flex Project</title>
+    <style>
+      html {
+        font-size: 92.5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nav {
+        display: flex;
+        /* width: 100%; */
+        background-color: #fff;
+        /* font-size: 20px; */
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+      }
+      .brand {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+      .nav-button {
+        text-align: right;
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .nav-button a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        margin: 0 5px;
+        padding: 5px;
+      }
+
+      .body {
+        display: flex;
+        margin-bottom: 40px;
+      }
+      .left-column,
+      .right-column,
+      .center-column {
+        border: 1px solid black;
+        flex: 1 1 33%;
+        padding: 0 20px;
+        /* flex-basis: 33%;
+        flex-grow:1;
+        flex-shrink: 1; */
+      }
+      .left-column a {
+        text-decoration: none;
+        border: 1px solid red;
+        display: block;
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .center-column {
+        flex-basis: 50%;
+        flex-grow: 0;
+      }
+      .right-column .ad {
+        height: 100px;
+        display: flex;
+        padding: 20px 10px;
+        background-color: #000;
+        margin: 10px 0px;
+      }
+      .footer {
+        display: flex;
+        background-color: #111;
+        justify-content: space-around;
+        align-self: center;
+        color: #fff;
+        padding: 50px 0;
+      }
+      .footer div {
+        flex-basis: 20%;
+        border: 1px solid blue;
+      }
+
+      @media (max-width: 700px) {
+        .body,
+        .footer {
+          flex-wrap: wrap;
+        }
+        .footer div {
+          flex-basis: 49%;
+          flex-shrink: 0;
+          flex-grow: 0;
+          border: 1px solid white;
+          margin-bottom: 10px;
+        }
+        .left-column,
+        .right-column,
+        .center-column {
+          flex-basis: 100%;
+          flex-shrink: 0;
+          flex-grow: 0;
+        }
+        .center-column {
+          order: 1;
+        }
+        .left-column {
+          order: 2;
+        }
+        .right-column {
+          order: 3;
+        }
+      }
+      @media (max-width: 324px) {
+        .left-column a {
+          border: none;
+          display: block;
+        }
+      }
+
+      /* This media Quiry for print the web page in pdf formate */
+
+      @media print {
+        .nav,
+        .left-column,
+        .right-column,
+        .footer,
+        .nav-button {
+          display: none;
+        }
+      }
+
+      .multiplemedia {
+        padding: 20px;
+        background-color: blue;
+        color: #fff;
+      }
+
+      @media (min-width: 600px) and (max-width: 1000px) {
+        .multiplemedia {
+          background-color: transparent;
+          color: #000;
+        }
+      }
+
+      .video-container {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+      }
+      .video-container-16x9 {
+        padding-bottom: 56.25%;
+      }
+      .video-container-4x3 {
+        padding-bottom: 75%;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#" class="brand">CSS Course</a>
+      <div class="nav-button">
+        <a href="/signup">Sign up</a>
+        <a href="/login">Login</a>
+      </div>
+    </div>
+
+    <div class="multiplemedia">
+      Here is the Demo of the Multiple Media Quiry.
+    </div>
+
+    <div class="body">
+      <div class="left-column">
+        <h4>Navigation</h4>
+        <a href="#">nav 1</a>
+        <a href="#">nav 2</a>
+        <a href="#">nav 3</a>
+      </div>
+      <div class="center-column">
+        <h1>Hello World!</h1>
+        <p>This is a responsive website !</p>
+        <div class="video-container video-container-16x9">
+          <iframe
+            width="853"
+            height="480"
+            src="https://www.youtube.com/embed/G0jO8kUrg-I"
+            title="How To Create To-Do List App Using HTML CSS And JavaScript | Task App In JavaScript"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="right-column">
+        <h4>Ad section</h4>
+        <div class="ad"></div>
+        <div class="ad"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>Column 1</div>
+      <div>Column 2</div>
+      <div>Column 3</div>
+      <div>Column 4</div>
+    </footer>
+  </body>
+</html>

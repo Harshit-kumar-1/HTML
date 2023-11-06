@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Transition Timing Function</title>
+    <style>
+      /* Here you can change */
+      .learning {
+        padding: 10px;
+        margin-top: 29px;
+      }
+
+      .parent {
+        position: relative;
+        width: 90%;
+        height: 70px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px auto;
+        background: rgba(54, 214, 89, 0.9);
+      }
+
+      .child {
+        position: absolute;
+        top: 0;
+        left: calc(100% - 50px);
+        width: 50px;
+        height: 68px;
+        transition: 0.5s;
+        background: red;
+        /* here is code */
+        transition-duration: 5s;
+        transition-property: left;
+        /* we  have many time function properties like Linear, ease,ease-in and ease-in-out*/
+        transition-timing-function: ease-in-out;
+      }
+
+      .parent:hover .child {
+        left: 0;
+      }
+
+      .parent:hover {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        Transition-duration: 250ms/0.5s; <br />
+        transition-property:color;<br />
+        transition-timing-function: linear;
+      </div>
+    </section>
+    <section class="learning">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

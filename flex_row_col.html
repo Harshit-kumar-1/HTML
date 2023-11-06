@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Flex properties</title>
+    <style>
+      .learning {
+        margin: 0px auto;
+      }
+
+      /* Here you can change */
+      .flex-parent {
+        display: flex;
+        border: 1px solid red;
+        width: 99%;
+        /* here is code */
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row;it is by default */
+        /* flex-direction: row-reverse; */
+      }
+
+      .flex-parent div {
+        border: 1px solid green;
+        flex-basis: 33%;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      .box3 {
+        order: -5;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        flex-direction: column|column-reverse|row|row-reverse
+      </div>
+    </section>
+    <section class="learning">
+      <div class="flex-parent">
+        <div class="box1">Columns 1</div>
+        <div class="box2">Columns 2</div>
+        <div class="box3">Columns 3</div>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

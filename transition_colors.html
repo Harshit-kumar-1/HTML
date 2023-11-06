@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Transition Color</title>
+    <style>
+      /* Here you can change */
+      .learning {
+        padding: 10px;
+        margin-top: 29px;
+      }
+
+      .text-area {
+        width: 70%;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        font-size: 44px;
+        color: black;
+        /* we also type this  type css full formula */
+        /* transition: 0.3s color linear; */
+        transition-duration: 1.3s;
+        transition-property: color;
+        transition-timing-function: linear;
+      }
+      a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        Transition-duration: 250ms/0.5s; <br />
+        transition-property:color;<br />
+        transition-timing-function: linear;
+      </div>
+    </section>
+    <section class="learning">
+      <div class="text-area">
+        <a href="#">The Quick Fox Jump over the lazy dog.</a>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Transform 2D Skew</title>
+    <style>
+      /* Here you can change */
+      .learning {
+        padding: 10px;
+        margin-top: 29px;
+      }
+      .parent {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background: rgb(152, 147, 25);
+        position: relative;
+        margin: 20px 30px;
+        padding: 20px;
+        border: 2px solid red;
+      }
+
+      /* here is code */
+      .skew {
+        transition: 1s transform linear;
+        /* transform: skewX(20deg); */
+      }
+
+      .skew:hover {
+        /* transform: skew(20deg); */
+        /* transform: skewX(20deg); */
+        transform: skewY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">transform: skew(20deg);</div>
+    </section>
+    <section class="learning">
+      <div class="parent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+        mollitia totam officia, eveniet adipisci dolorum aperiam fugit similique
+        harum maiores!
+      </div>
+      <div class="parent skew">
+        [HOVER ME] Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facere sint iste architecto sit debitis deserunt rem similique!
+        Explicabo, saepe molestias?
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

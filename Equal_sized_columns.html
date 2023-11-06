@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Flex properties</title>
+    <style>
+      .learning {
+        margin: 0px auto;
+      }
+
+      /* Here you can change */
+      .flex-parent {
+        display: flex;
+        border: 1px solid red;
+        width: 99%;
+      }
+
+      .flex-parent div {
+        border: 1px solid green;
+        flex-basis: 33%;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      .box1 {
+        flex-basis: 33%;
+        flex-shrink: 0;
+        flex-grow: 1;
+        background-color: blue;
+      }
+      .box2 {
+        flex-basis: 70%;
+        flex-shrink: 1;
+        flex-grow: 0;
+      }
+      .box3 {
+        flex: 0 1 40%; /*it is short trick to write flex properties*/
+        /*flex-grow: 0; 
+        flex-shrink: 1;
+        flex-basis: 50%;*/
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        flex-basis: 33%; flex-shrink: 1=true,0=false; flex-grow: 1=true,0=false;
+      </div>
+    </section>
+    <section class="learning">
+      <div class="flex-parent">
+        <div class="box1">Columns 1</div>
+        <div class="box2">Columns 2</div>
+        <div class="box3">Columns 3</div>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Box-sizing</title>
+    <style>
+      .learning {
+        margin: 0px auto;
+      }
+
+      /* Here you can change */
+      .box {
+        width: 500px;
+        height: 200px;
+        background-color: rgb(210, 218, 220);
+        border: 2px solid green;
+        text-align: justify;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      #d1 {
+        width: 200px;
+        box-sizing: content-box; /*By default value is set*/
+        border: 2px solid green;
+        padding: 20px;
+      }
+      #d2 {
+        width: 200px;
+        box-sizing: border-box; /*We need to set this value*/
+        border: 2px solid green;
+        margin: 10px 10px 0 0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">resize: none|both|horizontal|vertical;</div>
+    </section>
+    <section class="learning">
+      <div class="box">
+        <div id="d1">
+          Content-box
+          <!-- {it have 244px width} -->
+          <!-- here border box have 200px width in content coz 20+20 padding and 2+2 border 200 + 40 + 4 = 244px -->
+        </div>
+
+        <div id="d2">
+          Border-box
+          <!-- {it have 200px width} -->
+          <!-- here border box have 156px width in content coz 20+20padding and 2+2border 156 + 40 + 4 = 200px -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Animation Section</title>
+    <style>
+      #header {
+        margin-bottom: 0px;
+      }
+      .learning {
+        /* padding: 10px; */
+        margin: 0px;
+      }
+      /* Here you can change */
+      @keyframes miniproject {
+        0% {
+          left: 0;
+          top: 110px;
+        }
+        25% {
+          left: 0;
+          top: calc(100% - 155px);
+        }
+        50% {
+          top: calc(100% - 155px);
+          left: calc(100% - 75px);
+        }
+        75% {
+          left: calc(100% - 75px);
+          top: 110px;
+        }
+        100% {
+          top: 110px;
+          left: 0;
+        }
+      }
+
+      .box {
+        position: fixed;
+        width: 75px;
+        height: 75px;
+        background-color: rgb(20, 155, 192);
+        border: 2px solid green;
+        animation-name: miniproject;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">Animation-Mini-Project</div>
+    </section>
+    <section class="learning">
+      <div class="box"></div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

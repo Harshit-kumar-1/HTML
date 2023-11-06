@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Animation Section</title>
+    <style>
+      /* Here you can change */
+      .learning {
+        padding: 10px;
+        margin: 29px auto;
+      }
+      /* it work on animation in .box:hover part */
+      @keyframes blinkinganimation {
+        0% {
+          /*1st second*/
+          opacity: 1;
+        }
+        25% {
+          /*2nd Second*/
+          opacity: 0;
+        }
+        50% {
+          /* 3rd second */
+          opacity: 1;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          /* 4th Second */
+          opacity: 1;
+        }
+      }
+      .box {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: rgb(25, 95, 152);
+        margin: 20px 200px;
+        padding: 20px;
+        color: #fff;
+        /* here is code  */
+        animation-name: blinkinganimation;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        @keyframes first{ 0%{} 50%{} 100%{}} .box{animation-name: first;
+        animation-duration:4s; animation-fill-mode: forwards;}
+      </div>
+    </section>
+    <section class="learning">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

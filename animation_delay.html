@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Animation Section</title>
+    <style>
+      /* Here you can change */
+      .learning {
+        padding: 10px;
+        margin: 29px auto;
+      }
+      /* it work on animation in .box:hover part */
+      @keyframes blinkinganimation {
+        0% {
+          /*1st second*/
+          opacity: 1;
+        }
+        25% {
+          /*2nd Second*/
+          opacity: 0;
+        }
+        50% {
+          /* 3rd second */
+          opacity: 1;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          /* 4th Second */
+          opacity: 1;
+        }
+      }
+      .box {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: rgb(25, 95, 152);
+        margin: 20px auto;
+        padding: 20px;
+        color: #fff;
+        /* here is code  */
+        animation-name: blinkinganimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        /* here is code  */
+        animation-delay: 2s;
+      }
+      .count-1 {
+        background-color: red;
+        animation-iteration-count: 1;
+      }
+      .count-3 {
+        background-color: yellow;
+        animation-iteration-count: 3;
+      }
+      .count-infinite {
+        background-color: green;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        @keyframes first{ 0%{} 50%{} 100%{}} .box{animation-name: first;
+        animation-duration:4s; animation-fill-mode: forwards;
+        animation-ittration-count: Number|Infinite; animation-delay: 2s;}
+      </div>
+    </section>
+    <section class="learning">
+      <div class="box count-1"></div>
+      <div class="box count-3"></div>
+      <div class="box count-infinite"></div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

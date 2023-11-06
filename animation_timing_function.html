@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Animation Section</title>
+    <style>
+      /* Here you can change */
+      .learning {
+        padding: 10px;
+        margin: 29px auto;
+      }
+      /* it work on animation in .box:hover part */
+      @keyframes speedanimation {
+        0% {
+          /*1st second*/
+          margin-left: 0px;
+        }
+
+        100% {
+          /* 4th Second */
+          margin-left: 900px;
+        }
+      }
+      .box {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background: rgb(25, 95, 152);
+        margin: 20px auto;
+        padding: 20px;
+        color: #fff;
+        /* here is code  */
+        animation-name: speedanimation;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+        animation-iteration-count: 4;
+        /* here is code  */
+        /*animation-direction: normal; /*normal means forwards (direction will be 0% to 100%)*/
+        animation-direction: alternate; /*alternate means forwards (direction will be 0% to 100%)*/
+        /*animation-direction: alternate-reverse; /*(direction will be 100% to 0%) */
+        /* animation-timing-function: linear; */
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        @keyframes first{ 0%{} 50%{} 100%{}} .box{animation-name: first;
+        animation-direction: normal(forwards)|alternate|alternate-reverse;
+        animation-timing-function:linear|ease|ease-in|ease-in-out;}
+      </div>
+    </section>
+    <section class="learning">
+      <div class="box"></div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

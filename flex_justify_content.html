@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Flex properties</title>
+    <style>
+      .learning {
+        margin: 0px auto;
+      }
+
+      /* Here you can change */
+      .flex {
+        display: flex;
+        background-color: blue;
+        height: 300px;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .col {
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #8c1515;
+        color: #fff;
+        border: 1px solid #fff;
+        height: 100px;
+        /* margin-right: 10px; */
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        justify-content: center|space-evenly|space-between|space-around;
+      </div>
+    </section>
+    <section class="learning">
+      <div class="flex">
+        <div class="col">Columns</div>
+        <div class="col">Columns</div>
+        <div class="col">Columns</div>
+        <div class="col">Columns</div>
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

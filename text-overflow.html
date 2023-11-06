@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Text overflow</title>
+    <style>
+      /* Here you can change */
+
+      .learning {
+        padding: 10px;
+        margin-top: 29px;
+      }
+
+      .text-area {
+        width: 220px;
+        border: 1px solid black;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 20px;
+      }
+      .clip {
+        text-overflow: clip;
+      }
+      .ellipsis {
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">text-overflow:clip; text-overflow: ellipsis;</div>
+    </section>
+    <section class="learning">
+      <div class="text-area clip">The Quick Fox Jump over the lazy dog.</div>
+      <div class="text-area ellipsis">
+        The Quick Fox Jump over the lazy dog.
+      </div>
+
+      &hellip;&vellip;
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>repeating-radial-gradient</title>
+    <style>
+      /* Here you can change */
+
+      .learning {
+        padding: 10px;
+        margin-top: 29px;
+      }
+
+      .learning div {
+        padding: 50px;
+        height: 300px;
+        width: 400px;
+        background-color: #ccc;
+        /* background: radial-gradient(circle, red, blue, yellow); */
+        /* background: radial-gradient(circle, red 25%, blue 65%, yellow 10%); */
+        background: repeating-radial-gradient(circle, blue, red 5%, yellow 15%);
+        color: rgba(4, 92, 63, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <div id="topic">
+        background: repeating-radial-gradient(cicle, red, blue 5%, yellow 10%);
+      </div>
+    </section>
+    <section class="learning">
+      <div>
+        Something is here ..... Something is here ..... Something is here .....
+        Something is here ..... Something is here ..... Something is here .....
+      </div>
+    </section>
+    <footer>
+      <p>This is a prectice page for UDEMY COURSE.</p>
+    </footer>
+  </body>
+</html>
